@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Responsive Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    header, footer {
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #34495e;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #ecf0f1;
+      padding: 0.75rem 1.5rem;
+      margin: 0.3rem;
+      text-decoration: none;
+      border-radius: 5px;
+      background: #3b5770;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #1abc9c;
+      color: #fff;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header, footer, nav {
+        font-size: 14px;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explore the World</h1>
+    <p>Discover beautiful places with us</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Destinations</a>
+    <a href="#">Tours</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main class="container">
+    <div class="card">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/mt-assiniboine-provincial-park-at-sunrise-royalty-free-image-1623253564.jpg" alt="Mountains">
+      <div class="card-content">
+        <h3>Mountain Escape</h3>
+        <p>Experience the tranquility of the mountains and reconnect with nature.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.0aaeoTOZ3CajwTgpqt_JBgHaE6?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Beach">
+      <div class="card-content">
+        <h3>Beach Paradise</h3>
+        <p>Relax under the sun and enjoy the soothing sound of ocean waves.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://cdn1.matadornetwork.com/blogs/1/2022/12/black-forest-germany.jpg" alt="Forest">
+      <div class="card-content">
+        <h3>Forest Adventure</h3>
+        <p>Wander through lush green forests and explore the wild.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://travel.prwave.ro/wp-content/uploads/2015/08/Melbourne-city-and-the-Yarra-river-at-nigh.jpg" alt="City">
+      <div class="card-content">
+        <h3>Urban Exploration</h3>
+        <p>Dive into vibrant city life, culture, and endless activities.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ExploreWorld Travel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
